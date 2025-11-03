@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { Card, Button, MenuProps } from 'antd';
+import { Card, Button } from 'antd';
 import { HeartOutlined, HeartFilled, DeleteOutlined, EditOutlined } from '@ant-design/icons';
 import { Product } from '../types/product';
 import { toggleLike, deleteProduct } from '../store/productsSlice';

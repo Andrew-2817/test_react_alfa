@@ -1,25 +1,32 @@
 {
   "name": "react-products-app",
+  "private": true,
   "version": "1.0.0",
+  "type": "module",
   "homepage": "https://yourusername.github.io/test_react_alfa",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
+    "@ant-design/icons": "^5.2.0",
+    "@reduxjs/toolkit": "^1.9.7",
+    "antd": "^5.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.3",
-    "react-router-dom": "^6.16.0",
-    "@reduxjs/toolkit": "^1.9.7",
-    "antd": "^5.12.0",
-    "@ant-design/icons": "^5.2.0"
+    "react-router-dom": "^6.16.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.7.0",
+    "gh-pages": "^6.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.5"
   }
 }

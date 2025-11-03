@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Изменили на HashRouter
 import { Provider } from 'react-redux';
 import { Layout, Typography } from 'antd';
 import { store } from './store';
@@ -14,7 +14,7 @@ const { Title } = Typography;
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      {/* Заменили BrowserRouter на HashRouter для GitHub Pages */}
+      {/* Используем HashRouter вместо BrowserRouter для GitHub Pages */}
       <Router>
         <Layout style={{ minHeight: '100vh' }}>
           <Header style={{ display: 'flex', alignItems: 'center' }}>
